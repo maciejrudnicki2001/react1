@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>React Samples</title>
+</head>
+<body>
+<!-- Target container -->
+
+<div id="root">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link to google.com</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link to facebook.com</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link to amazon.com</a>
+    </li>
+  </ul>
+</div>
+
+<!-- React library & ReactDOM (Development Version)-->
+<script
+        src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+
+<script>
+  const root = ReactDOM.createRoot(document.getElementById("root"))
+  const links = [{link: "https://www.google.com", description: "Link to google.com"},
+    {link: "https://bing.com",description: "Link to bing.com"},
+    {link: "https://amazon.com",description: "Link to amazon.com"}
+  ]
+  function changewithlink(link){
+    return link.replace("#", link);
+  }
+
+  const get
+
+</script>
+</body>
+</html>
