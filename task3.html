@@ -1,42 +1,42 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--  <meta charset="utf-8" />-->
-<!--  <title>React Samples</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--&lt;!&ndash; Target container &ndash;&gt;-->
-<!--<div id="root"></div>-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>React Samples</title>
+</head>
+<body>
+<!-- Target container -->
+<div id="root"></div>
 
-<!--&lt;!&ndash; React library & ReactDOM (Development Version)&ndash;&gt;-->
-<!--<script-->
-<!--        src="https://unpkg.com/react@18/umd/react.development.js">-->
-<!--</script>-->
-<!--<script-->
-<!--        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">-->
-<!--</script>-->
+<!-- React library & ReactDOM (Development Version)-->
+<script
+        src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
 
-<!--<script>-->
-<!--  // Pure React and JavaScript code-->
-<!--  const data = {-->
-<!--    image: "https://i.ytimg.com/vi/kHjzuqq3b44/maxresdefault.jpg",-->
-<!--    cardTitle: "Bob Dylan",-->
-<!--    cardDescription: "Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.",-->
-<!--    button: {-->
-<!--      url: "https://en.wikipedia.org/wiki/Bob_Dylan",-->
-<!--      label: "Go to wikipedia"-->
-<!--    }-->
-<!--  };-->
-<!--  const root = ReactDOM.createRoot(document.getElementById("root"));-->
-<!--    const card = React.createElement('div', {className: 'card'},-->
-<!--        React.createElement('img', {src: data.image, className: 'card-img-top'}),-->
-<!--        React.createElement('div', {className: 'card-body'},-->
-<!--        React.createElement('h5', {className: 'card-title'}, data.cardTitle),-->
-<!--        React.createElement('p', {className: 'card-text'}, data.cardDescription),-->
-<!--        React.createElement('a', {href: data.button.url, className: 'btn btn-primary'}, data.button.label)-->
-<!--        )-->
-<!--    );-->
-<!--    root.render(card);-->
-<!--</script>-->
-<!--</body>-->
-<!--</html>-->
+<script>
+  // Pure React and JavaScript code
+  const data = {
+    image: "https://i.ytimg.com/vi/kHjzuqq3b44/maxresdefault.jpg",
+    cardTitle: "Bob Dylan",
+    cardDescription: "Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.",
+    button: {
+      url: "https://en.wikipedia.org/wiki/Bob_Dylan",
+      label: "Go to wikipedia"
+    }
+  };
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+    const card = React.createElement('div', {className: 'card'},
+        React.createElement('img', {src: data.image, className: 'card-img-top'}),
+        React.createElement('div', {className: 'card-body'},
+        React.createElement('h5', {className: 'card-title'}, data.cardTitle),
+        React.createElement('p', {className: 'card-text'}, data.cardDescription),
+        React.createElement('a', {href: data.button.url, className: 'btn btn-primary'}, data.button.label)
+        )
+    );
+    root.render(card);
+</script>
+</body>
+</html>
